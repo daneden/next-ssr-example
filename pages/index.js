@@ -14,6 +14,7 @@ export default function IndexPage({ initialData }) {
   )
 }
 
+// If your data only changes infrequently, you could use getStaticProps here instead with a refresh interval
 export async function getServerSideProps() {
   const initialData = await getData("getServerSideProps")
 
